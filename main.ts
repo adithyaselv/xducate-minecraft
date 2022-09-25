@@ -11,15 +11,15 @@ namespace Xducate {
             builder.turn(LEFT_TURN)
         }
         builder.tracePath(STONE)
-        
-        // Todo fill air before placing agent and roses
-        
-        // Place agent
+
+        // Place agent at start of world
         let p = positions.createWorld(-1, 4, -6)
         agent.teleport(p, FORWARD)
 
-        //Place rose_bush
-        rosePosition = positions.random(positions.createWorld(-2, 4, -7), positions.createWorld(-13, 4, -18))
+        //Reset and Place rose_bush
+        let edges = [positions.createWorld(-2, 4, -7), positions.createWorld(-13, 4, -18)]
+        blocks.fill(AIR, edges[0], edges[1])
+        rosePosition = positions.random(edges[0], edges[1])
         blocks.place(ROSE_BUSH, rosePosition)
     }
 
