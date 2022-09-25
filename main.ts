@@ -6,22 +6,21 @@ namespace Xducate {
         loops.pause(1500)
         builder.teleportTo(pos(0, 0, -5))
         builder.mark()
-        let edges: Array<Position> = []
-        edges.push(builder.position())
         for (let j = 0; j <= 3; j++) {
             builder.move(FORWARD, 14)
             builder.turn(LEFT_TURN)
-            edges.push(builder.position())
         }
         builder.tracePath(STONE)
-
+        
+        // Todo fill air before placing agent and roses
+        
         // Place agent
         let p = positions.createWorld(-1, 4, -6)
         agent.teleport(p, FORWARD)
 
-        player.say([edges[0], edges[2]])
         //Place rose_bush
-        blocks.place(ROSE_BUSH, positions.random(positions.createWorld(-2, 4, -7), positions.createWorld(-13, 4, -18)))
+        rosePosition = positions.random(positions.createWorld(-2, 4, -7), positions.createWorld(-13, 4, -18))
+        blocks.place(ROSE_BUSH, rosePosition)
     }
 
     function findRoses() {
@@ -104,7 +103,7 @@ namespace Xducate {
 
             for (let i = 0; i <= 3; i++) {
                 if (agent.inspect(AgentInspection.Block, dir[i]) == 0 && visited.indexOf(cur.move(next[i], 1).toString()) == -1) {
-                    queue.push({ x: cur.move(next[i], 1), dis: euclideanDistance(cur.move(next[i], 1), positions.createWorld(-9, 4, 14)) })
+                    queue.push({ x: cur.move(next[i], 1), dis: euclideanDistance(cur.move(next[i], 1), rosePosition) })
                 }
             }
             if (findRoses()) break
@@ -149,6 +148,8 @@ namespace Xducate {
         BACK,
         FORWARD
     ]
+    
+    let rosePosition: Position = null
 
     /**
      * Tests
