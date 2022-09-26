@@ -78,8 +78,11 @@ namespace Xducate {
         }
     }
 
-    //% block
-    export function strategy3() {
+    // Blocks doesn't recognise this. Js works
+    // type Heuristic = (p1: Position, p2: Position) => number
+
+    //% block 
+    export function strategy3(heuristic: number) {
 
         type Node = {
             x: Position,
@@ -103,20 +106,20 @@ namespace Xducate {
 
             for (let i = 0; i <= 3; i++) {
                 if (agent.inspect(AgentInspection.Block, dir[i]) == 0 && visited.indexOf(cur.move(next[i], 1).toString()) == -1) {
-                    queue.push({ x: cur.move(next[i], 1), dis: euclideanDistance(cur.move(next[i], 1), rosePosition) })
+                    let h = heuristic == 1 ? manhattanDistance : euclideanDistance 
+                    queue.push({ x: cur.move(next[i], 1), dis: heuristic(cur.move(next[i], 1), rosePosition) })
                 }
             }
             if (findRoses()) break
         }
     }
 
-    //% block
-    export function manhattanDistance(p1: Position, p2: Position) {
+    
+    function manhattanDistance(p1: Position, p2: Position) {
         return Math.abs(Math.abs(p2.getValue(Axis.X)) - Math.abs(p1.getValue(Axis.X))) + Math.abs(Math.abs(p2.getValue(Axis.Z)) - Math.abs(p1.getValue(Axis.Z)))
     }
 
-    //% block
-    export function euclideanDistance(p1: Position, p2: Position) {
+    function euclideanDistance(p1: Position, p2: Position) {
         return Math.sqrt(Math.pow(Math.abs(p2.getValue(Axis.X)) - Math.abs(p1.getValue(Axis.X)), 2) + Math.pow(Math.abs(Math.abs(p2.getValue(Axis.Z)) - Math.abs(p1.getValue(Axis.Z))), 2))
     }
 
