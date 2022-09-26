@@ -1,9 +1,12 @@
-# Search Strategies
+# Description
+
+![image](https://user-images.githubusercontent.com/37502542/192399564-defe7c15-ffd3-4a4f-8c72-168aa9d0ff6e.png) ![image](https://user-images.githubusercontent.com/37502542/192399595-4270e1f5-b826-4707-a42d-1e6fc5a495f3.png)
+
+<br>
 
 ## Introduction
 We have an extremely inquisitive and explorative agent who likes to visit numerous worlds and investigate them. The agent has a special door through which it can go around various universes. On one occasion, the very energized agent entered another world through the door and began its investigation in that world. He viewed the world as exceptionally tranquil and quiet and continued to ponder the different resources it could see as in this world. Although the agent was able to locate some useful resources for its voyage with the aforementioned enthusiasm, it was unaware of the extreme proximity from the portal door. It was lost and was in an obscure place where it stopped getting any signals from the door. How might the agent currently track down this door so it can return to its domain?
-<br>
-![image](https://user-images.githubusercontent.com/37502542/192399564-defe7c15-ffd3-4a4f-8c72-168aa9d0ff6e.png) ![image](https://user-images.githubusercontent.com/37502542/192399595-4270e1f5-b826-4707-a42d-1e6fc5a495f3.png)
+
 
 ## Agent's movement
 ![image](https://user-images.githubusercontent.com/37502542/192399622-e6a03692-880f-45b7-afa6-58608a9655e7.png) ![image](https://user-images.githubusercontent.com/37502542/192399636-8ec5ea4f-10e3-492a-8580-80651746d0b6.png)
