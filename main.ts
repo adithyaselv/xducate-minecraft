@@ -107,7 +107,7 @@ namespace Xducate {
             for (let i = 0; i <= 3; i++) {
                 if (agent.inspect(AgentInspection.Block, dir[i]) == 0 && visited.indexOf(cur.move(next[i], 1).toString()) == -1) {
                     let h = heuristic == 1 ? manhattanDistance : euclideanDistance 
-                    queue.push({ x: cur.move(next[i], 1), dis: heuristic(cur.move(next[i], 1), rosePosition) })
+                    queue.push({ x: cur.move(next[i], 1), dis: h(cur.move(next[i], 1), rosePosition) })
                 }
             }
             if (findRoses()) break
