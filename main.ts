@@ -13,17 +13,28 @@ namespace Xducate {
         builder.tracePath(STONE)
 
         // Place agent at start of world
-        let p = positions.createWorld(-1, 4, -6)
-        agent.teleport(p, FORWARD)
+        resetAgent()
 
         //Reset and Place rose_bush
+        resetRoses()
+    }
+    
+    //% block
+    export function resetAgent() {
+        let p = positions.createWorld(-1, 4, -6)
+        agent.teleport(p, FORWARD)
+    }
+    
+    //% block
+    export function resetRoses() {
         let edges = [positions.createWorld(-2, 4, -7), positions.createWorld(-13, 4, -18)]
         blocks.fill(AIR, edges[0], edges[1])
         rosePosition = positions.random(edges[0], edges[1])
         blocks.place(ROSE_BUSH, rosePosition)
     }
 
-    function findRoses() {
+    //% block
+    export function findRoses() {
         if (agent.inspect(AgentInspection.Block, FORWARD) == 175) dance()
         return agent.inspect(AgentInspection.Block, FORWARD) == 175
     }
