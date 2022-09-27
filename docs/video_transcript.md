@@ -1,0 +1,11 @@
+## Video Transcript
+
+STEM concepts can be technical and boring for kids. To comprehend them, kids will need a lot of imagination and it is often hard to apply these ideas to situations that they are familiar with. Imagining certain concepts could be difficult which might discourage the child from learning. How can we teach children precisely what they need to know without losing their interest?
+
+Minecraft is an imaginative world. We could create an entirely new world in which the child feels at ease comprehending the learning structures and can relate to the environment. One such novel approach to teaching children STEM concepts is the make-code initiative, which is an extension of Minecraft. Make-Code can be used to create as many imaginative worlds as possible for children to help them understand the concepts.
+
+Our project is focused on constructing a toolbox, that a child can employ to explore and learn key principles whilst viewing the simulation. The primary objective of the simulation is to demonstrate the concepts to the kids using simple Minecraft blocks that will pique their interest. The kid will acquire knowledge and skills through direct practice whilst reflecting on the experience they've had. This learn by experience, Xducate is what we want to achieve through this project!
+
+For the demo, we have created few blocks that will enable the educators and learners to explore the concept of graph search in computer science. Let's go ahead and explore few blocks and see how this works. First to start with we will need a playground which serves as an environment to perform all our experiments and simulations . So let us add the playground block into on-start block and this will create a simple arena with an agent and rose bush. The goal here is, the agent should to find rose bush and for the demo, let us use Strategy 3 defined here based on A-Star algorithm. When we execute, we can visualize how the agent is finding the goal and this helps us understand how the algorithm actually works. We have also created a tutorial where we have used a story to make these concepts fun to learn through simple steps. This tutorial can be found in the project links given below. Our project is open-source and is available on github to explore and contribute.
+
+Thank you 

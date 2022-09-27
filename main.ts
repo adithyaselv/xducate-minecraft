@@ -33,8 +33,8 @@ namespace Xducate {
         blocks.place(ROSE_BUSH, rosePosition)
     }
 
-    //% block
-    export function findRoses() {
+    
+    function findRoses() {
         if (agent.inspect(AgentInspection.Block, FORWARD) == 175) dance()
         return agent.inspect(AgentInspection.Block, FORWARD) == 175
     }
