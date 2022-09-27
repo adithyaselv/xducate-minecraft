@@ -1,11 +1,13 @@
 # Description
 
-![image](https://user-images.githubusercontent.com/37502542/192399564-defe7c15-ffd3-4a4f-8c72-168aa9d0ff6e.png) ![image](https://user-images.githubusercontent.com/37502542/192399595-4270e1f5-b826-4707-a42d-1e6fc5a495f3.png)
+![image](https://user-images.githubusercontent.com/37502542/192399564-defe7c15-ffd3-4a4f-8c72-168aa9d0ff6e.png) ![image](https://user-images.githubusercontent.com/37502542/192433796-abaec297-a698-46f3-92aa-bd67391774ca.png) ![image](https://user-images.githubusercontent.com/37502542/192399595-4270e1f5-b826-4707-a42d-1e6fc5a495f3.png)
 
 <br>
 
 ## Introduction
-We have an extremely inquisitive and explorative agent who likes to visit numerous worlds and investigate them. The agent has a special door through which it can go around various universes. On one occasion, the very energized agent entered another world through the door and began its investigation in that world. He viewed the world as exceptionally tranquil and quiet and continued to ponder the different resources it could see as in this world. Although the agent was able to locate some useful resources for its voyage with the aforementioned enthusiasm, it was unaware of the extreme proximity from the portal door. It was lost and was in an obscure place where it stopped getting any signals from the door. How might the agent currently track down this door so it can return to its domain?
+We have an extremely inquisitive and explorative agent who likes to visit numerous worlds and investigate them. The agent has a special door through which it can go around various universes. On one occasion, the very energized agent entered another world through the door and began its investigation in that world. He viewed the world as exceptionally tranquil and quiet and continued to ponder the different resources it could see as in this world. Although the agent was able to locate some useful resources for its voyage with the aforementioned enthusiasm, it was unaware of the extreme proximity from the portal door. It was lost and was in an obscure place where it stopped getting any signals from the door. The agent remembers seeing the signal of door when he was passing a rose bush. Help agent find the rose bush and regain the signal to the door.
+
+
 
 
 ## Agent's movement
