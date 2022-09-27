@@ -39,6 +39,7 @@ namespace Xducate {
         return agent.inspect(AgentInspection.Block, FORWARD) == 175
     }
 
+    // DFS
     //% block
     export function strategy1() {
         visited = []
@@ -64,6 +65,7 @@ namespace Xducate {
         }
     }
 
+    // BFS
     //% block
     export function strategy2() {
         visited = []
@@ -92,6 +94,7 @@ namespace Xducate {
     // Blocks doesn't recognise this. Js works
     // type Heuristic = (p1: Position, p2: Position) => number
 
+    // A-star
     //% block 
     export function strategy3(heuristic: number) {
 
